@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="fb-body">
+
+  <!-- Top Navbar -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">facebook</div>
+      <input type="text" placeholder="Search Facebook" class="search-box" />
+    </div>
+
+    <div class="topbar-center">
+      <a href="home.html" class="nav-link active">Home</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+      <a href="friends.html" class="nav-link">Friends</a>
+      <a href="messages.html" class="nav-link">Messages</a>
+      <a href="notifications.html" class="nav-link">Notifications</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+    </div>
+
+    <div class="topbar-right">
+      <span id="navUserName">User</span>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="main-layout">
+    <!-- Left Sidebar -->
+    <aside class="sidebar left-sidebar">
+      <div class="sidebar-card profile-mini">
+        <div class="avatar large-avatar" id="sidebarAvatar">U</div>
+        <h3 id="sidebarName">User Name</h3>
+        <p id="sidebarEmail">user@email.com</p>
+      </div>
+
+      <div class="sidebar-menu">
+        <a href="profile.html">👤 My Profile</a>
+        <a href="friends.html">👥 Friends</a>
+        <a href="messages.html">💬 Messages</a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="settings.html">⚙ Settings</a>
+      </div>
+    </aside>
+
+    <!-- Feed -->
+    <section class="feed">
+      <div class="create-post-card">
+        <div class="create-post-top">
+          <div class="avatar" id="feedAvatar">U</div>
+          <input type="text" id="postInput" placeholder="What's on your mind?" />
+        </div>
+        <button class="btn-primary post-btn" onclick="addPost()">Post</button>
+      </div>
+
+      <div id="postList">
+        <!-- posts will appear here -->
+      </div>
+    </section>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar right-sidebar">
+      <div class="sidebar-card">
+        <h3>Contacts</h3>
+        <div class="contact-item">
+          <div class="avatar">A</div>
+          <span>Jane Dignos</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">M</div>
+          <span>Clark Justin Umpad</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">J</div>
+          <span>John Carlo Nunez</span>
+        </div>
+        <div class="contact-item">
+          <div class="avatar">S</div>
+          <span>John Rim Neis</span>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Creator</h3>
+        <p>James Jay A.K.A Lalay</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

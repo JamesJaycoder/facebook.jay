@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+
+  <div class="auth-container">
+    <div class="auth-left">
+      <h1>facebook</h1>
+      <p>Create an account and start sharing your moments.</p>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-card">
+        <h2>Create Account</h2>
+
+        <form id="registerForm">
+          <input type="text" id="regName" placeholder="Full name" required />
+          <input type="text" id="regEmail" placeholder="Email or username" required />
+          <input type="password" id="regPassword" placeholder="Password" required />
+          <input type="password" id="regConfirmPassword" placeholder="Confirm password" required />
+
+          <button type="submit" class="btn-green">Sign Up</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <button class="btn-primary" onclick="goToLogin()">Back to Login</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
